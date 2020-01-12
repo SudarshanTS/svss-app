@@ -1,0 +1,10 @@
+<footer class="footer alignMiddle">
+    <div class=" flex alignCenter footerContainer">
+        <button class="cancel pointer mr8" (click)="handleCancel()">
+            <a class="middle wFull">Cancel</a>
+        </button>
+        <button class="submitButton pointer" (click)="handleSubmit()" [disabled]="isDisabled">
+            Submit
+        </button>
+    </div>
+</footer>

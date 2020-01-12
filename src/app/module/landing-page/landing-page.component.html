@@ -1,0 +1,13 @@
+<div class="p30">
+    <mat-card class="card">
+        <mat-card-content>
+            <div class="flex">
+                <div class="boxShadow p20 innerCard pointer middle" *ngFor="let item of cards">
+                    <a [routerLink]="item.route">
+                        <span>{{item.name}}</span>
+                    </a>
+                </div>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

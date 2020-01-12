@@ -1,0 +1,8 @@
+<fieldset>
+    <legend class="inFlex">{{props.lable}}
+        <span class="ml5" *ngIf="props.isMandatory">*</span>
+    </legend>
+    <mat-form-field>
+        <input matInput placeholder="{{ props.placeholder }}" [formControl]="props.Control" type="'text'">
+    </mat-form-field>
+</fieldset>

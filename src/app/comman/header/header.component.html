@@ -1,0 +1,15 @@
+<header class="bgWhite p20">
+    <div class="alignMiddle spaceBtw">
+        <span class="alignMiddle">
+            <span class="mr22 pointer" (click)="backArrowClick()">
+                <img src="assets/icons/arrow-left.svg" />
+            </span>
+            <span class="titleText">{{ headerTitle }}</span>
+        </span>
+        <div *ngIf="showRightContainer">
+            <div class="headerButton middle pointer new" (click)="handleNewButton()">
+                <span> + Add New</span>
+            </div>
+        </div>
+    </div>
+</header>
